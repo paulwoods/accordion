@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+body {
+    background: #0c3059;
+}
+
+.container {
+    /* height: 90vh; */
+    width: 90vw;
+    margin: 5vh 5vw;
+}
+
+.accordian-item {
+    margin-bottom: 30px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #333;
+    background: #eee;
+}
+
+.accordian-item h1 {
+    padding: 20px;
+}
+
+.accordian-item p {
+    padding: 20px;
+}
+
+.accordian-item h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordian-item h1 .accordian-more,
+.accordian-item h1 .accordian-less {
+    cursor: pointer;
+}
+
+.accordian-item p {
+    display: none;
+}
+
+.accordian-item.active p {
+    display: block;
+}
+
+.accordian-item .accordian-less {
+    display: none;
+}
+
+.accordian-item.active .accordian-less {
+    display: inline;
+}
+
+.accordian-item.active .accordian-more {
+    display: none;
+}
